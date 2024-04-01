@@ -23,7 +23,3 @@ Post-tuning, the performance of each machine learning model was analyzed, and co
 
 In conclusion, the project demonstrated the seamless integration of IoT devices, data preprocessing techniques, machine learning algorithms, and hyperparameter tuning to develop an efficient and accurate environmental monitoring system.
 
-# Data Collection Setup
-
-![Image Alt Text](setup.jpg)
-
