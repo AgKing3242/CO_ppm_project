@@ -22,3 +22,8 @@ To further enhance the models' performance, hyperparameter tuning was conducted 
 Post-tuning, the performance of each machine learning model was analyzed, and comparisons were drawn based on performance metrics. The most effective model(s) for predicting environmental variables such as temperature, humidity, and CO concentration were identified. These findings provided valuable insights into the efficacy of the IoT-based environmental monitoring system integrated with machine learning.
 
 In conclusion, the project demonstrated the seamless integration of IoT devices, data preprocessing techniques, machine learning algorithms, and hyperparameter tuning to develop an efficient and accurate environmental monitoring system.
+
+# Data Collection Setup
+
+![Image Alt Text](setup.jpg)
+
