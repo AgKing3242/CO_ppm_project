@@ -13,7 +13,7 @@ After retrieval from the ThingSpeak platform, the collected data underwent prepr
 Three distinct machine learning algorithms were chosen for predictive analysis based on their suitability for the dataset: Decision Tree, Random Forest, and a Simple Neural Network. Each algorithm offered unique strengths in handling different types of data and relationships, making them suitable candidates for the environmental monitoring application.
 
 # Model Training and Evaluation:
-The dataset was partitioned into training and testing sets to facilitate model training and evaluation. The selected machine learning models were trained using the training dataset and evaluated based on various performance metrics such as accuracy, precision, recall, and F1-score. This process provided insights into the models' predictive capabilities and generalization ability.
+The dataset was partitioned into training and testing sets to facilitate model training and evaluation. The selected machine learning models were trained using the training dataset and evaluated based on various performance metrics such as r2 score, mean absolute error (MAE) and root mean squared error (RMSE). This process provided insights into the models' predictive capabilities and generalization ability.
 
 # Hyperparameter Tuning:
 To further enhance the models' performance, hyperparameter tuning was conducted using GridSearchCV, an optimization technique. This involved exhaustively searching through a specified parameter grid to find the best hyperparameters for each model. By fine-tuning the models, their predictive accuracy and efficiency were improved, ensuring more reliable environmental predictions.
