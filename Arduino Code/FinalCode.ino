@@ -7,8 +7,6 @@
 float R0 = 8000.0;
 float RL = 2000.0;
 float RS;
-float PPM_Acetone;
-float PPM_CO2;
 float PPM_CO; 
 String WIFI_SSID = "moto";
 String WIFI_PASS = "12345678";
