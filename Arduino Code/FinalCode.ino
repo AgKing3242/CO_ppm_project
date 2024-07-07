@@ -58,6 +58,7 @@ void loop() {
   }
  countTrueCommand++;
 }
+
 void sendCommand(String command, int maxTime, char readReplay[]) {
   Serial.print(countTrueCommand);
   Serial.print(". at command => ");
