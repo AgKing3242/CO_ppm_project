@@ -4,6 +4,7 @@
 #define DHT11PIN 4
 #define RX 2
 #define TX 3
+
 float R0 = 8000.0;
 float RL = 2000.0;
 float RS;
@@ -16,8 +17,10 @@ String PORT = "80";
 int countTrueCommand;
 int countTimeCommand; 
 boolean found = false;   
+
 SoftwareSerial esp8266(RX,TX); 
 dht11 DHT11;
+
 void setup() {
   pinMode(A0,INPUT);
   Serial.begin(9600);
@@ -25,7 +28,9 @@ void setup() {
   sendCommand("AT",5,"OK");
   sendCommand("AT+CWJAP=\""+ WIFI_SSID +"\",\""+ WIFI_PASS +"\"",20,"OK");
 }
+
 void loop() {
+  
  float raw_value=analogRead(A0);
  float voltage=raw_value*5.0;
  voltage=voltage/1023.0;
@@ -38,10 +43,10 @@ void loop() {
  "&field2="+hum +"&field3="+PPM_CO+"&field4="+raw_value+"&field5="+RS/R0;
  sendCommand("AT+CIPMUX=1",5,"OK");
  sendCommand("AT+CIPSTART=0,\"TCP\",\""+ HOST +"\","+ PORT,15,"OK");
-int dataLength = getData.length();
-  int maxChunkSize = 120; 
-  int numChunks = ceil(dataLength / (float)maxChunkSize);
-
+ int dataLength = getData.length();
+ int maxChunkSize = 120; 
+ int numChunks = ceil(dataLength / (float)maxChunkSize);
+  
   for (int i = 0; i < numChunks; i++) {
     int startIndex = i * maxChunkSize;
     int endIndex = min(startIndex + maxChunkSize, dataLength);
