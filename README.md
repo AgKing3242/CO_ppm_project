@@ -3,6 +3,9 @@
 # Data Collection Phase:
 The project began with the collection of environmental data using sensors interfaced with an Arduino microcontroller board. A DHT11 sensor was employed to measure temperature and humidity levels, while an MQ135 sensor was utilized to gauge Carbon Monoxide (CO) concentrations. The Arduino microcontroller facilitated real-time data acquisition, reading sensor values and transmitting them to an ESP01 WiFi module for further processing.
 
+![Data Collection Setup](https://github.com/user-attachments/assets/04b5c51e-2e76-4bac-8b23-c81ed28729ef)
+
+
 # Data Transmission to ThingSpeak:
 Upon collection, the sensor data was transmitted to the ThingSpeak platform via the ESP01 WiFi module. The ESP01 module was configured to connect to a local WiFi network, enabling seamless communication with the ThingSpeak cloud-based IoT platform. This platform served as a repository for the collected data, allowing for easy access, visualization, and analysis.
 
